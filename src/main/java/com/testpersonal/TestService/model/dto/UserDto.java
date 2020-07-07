@@ -20,10 +20,11 @@ public class UserDto {
 	
 	public UserDto() {}
 	
-	public UserDto(String name, String lastName) {
+	public UserDto(String name, String lastName, String directionOfHouse) {
 		super();
 		this.name = name;
 		this.lastName = lastName;
+		this.directionOfHouse = directionOfHouse;
 	}
 	
 	public String getName() {

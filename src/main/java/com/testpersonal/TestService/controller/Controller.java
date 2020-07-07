@@ -34,7 +34,7 @@ public class Controller {
 	@GetMapping
 	public ResponseEntity<UserDto> get() {
 		System.out.println(value);
-		return ResponseEntity.ok(new UserDto("daniel", "osorio"));
+		return ResponseEntity.ok(new UserDto("daniel", "osorio", "cra 22 edificio 1012"));
 	}
 	
 	@PostMapping
@@ -47,7 +47,7 @@ public class Controller {
 	@PutMapping
 	@ResponseBody
 	public UserDto update() {
-		return new UserDto("Kevin", "Arias3");
+		return new UserDto("Kevin", "Arias3", "dirección prueba");
 	}
 	
 	@DeleteMapping
